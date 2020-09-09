@@ -2,7 +2,7 @@
 
 > A basic calculator made with Love and React ♥.
 
-![image](https://user-images.githubusercontent.com/5160907/92538253-d88a7e00-f203-11ea-9254-0f28e5bba7d7.png)
+![image](https://user-images.githubusercontent.com/5160907/92633312-37013c00-f298-11ea-9026-f3925d47d92f.png)
 
 This is the first milestone which is about seting up the project and deploy it to heroku.
 
