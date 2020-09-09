@@ -1,13 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 function Button(props) {
-    return (
-        <button 
-            className="button">
-          {props.value}
-        </button>
-      );
-  }
-  
-  export default Button;
+  const { value } = props;
+  return (
+    <button
+      type="button"
+      className="button"
+    >
+      {value}
+    </button>
+  );
+}
+
+Button.defaultProps = {
+  value: '',
+};
+Button.propTypes = {
+  value: PropTypes.string,
+};
+
+export default Button;
