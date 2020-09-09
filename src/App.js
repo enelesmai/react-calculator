@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-// import Big from './big.mjs';
 
 function App() {
   return (
