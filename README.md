@@ -17,26 +17,30 @@ This is the first milestone which is about seting up the project and deploy it t
 [Live Demo Link](https://calculator-by-enelesmai.herokuapp.com/)
 
 
-## Getting Started
-
-Get a local copy using 
-
-        git clone
 
 ### Prerequisites
         Node.js
+        
+### Getting Started
 
-### Setup
-** Install dependencies vía NPM
+Get a local copy by cloning this repository 
+
+        git clone git@github.com:enelesmai/react-calculator.git
+
+Go into the repository
+
+        cd react-calculator
+
+Install dependencies vía NPM 
 
         npm install
 
+Start the application
+
+        npm start
+
 ### Usage
 ** Explanation for the calculator will be added here
-
-### Run de projects
-
-    npm start
 
 
 ## Authors
