@@ -4,12 +4,12 @@ import Button from './Button';
 /* eslint class-methods-use-this: ["error", { "exceptMethods": ["renderButton"] }] */
 class ButtonPanel extends React.Component {
   renderButton(value) {
-    let operators = ['/','X','-','+','='];
+    const operators = ['/', 'X', '-', '+', '='];
     return (
       <Button
         value={value}
-        wide={value==='0'}
-        color={!operators.includes(value)?'gray':undefined}
+        wide={value === '0'}
+        color={!operators.includes(value) ? 'gray' : undefined}
       />
     );
   }

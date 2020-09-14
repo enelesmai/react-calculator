@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 function Button(props) {
   const { value, wide, color } = props;
   let buttonStyle = '';
-  if (wide){
+  if (wide) {
     buttonStyle += 'wide Button';
-  }else{
+  } else {
     buttonStyle += 'Button';
   }
   buttonStyle += ` ${color}`;
