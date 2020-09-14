@@ -3,17 +3,20 @@ import Button from './Button';
 
 /* eslint class-methods-use-this: ["error", { "exceptMethods": ["renderButton"] }] */
 class ButtonPanel extends React.Component {
-  renderButton(i) {
+  renderButton(value) {
+    let operators = ['/','X','-','+','='];
     return (
       <Button
-        value={i}
+        value={value}
+        wide={value==='0'}
+        color={!operators.includes(value)?'gray':undefined}
       />
     );
   }
 
   render() {
     return (
-      <div>
+      <div className="ButtonPanel">
         <div className="calc-row">
           {this.renderButton('AC')}
           {this.renderButton('+/-')}
