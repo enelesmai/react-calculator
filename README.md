@@ -1,57 +1,56 @@
-# Project Name
+# React Calculator
 
-> One paragraph statement about the project.
+> A basic calculator made with Love and React ♥.
 
-![screenshot](./app_screenshot.png)
+![image](https://user-images.githubusercontent.com/5160907/93145955-42e36880-f6b3-11ea-86af-970d51c2ddc4.png)
 
-Additional description about the project and its features.
+
+This is the first milestone which is about seting up the project and deploy it to heroku.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- React,
+- ES6,
+- NPM
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://calculator-by-enelesmai.herokuapp.com/)
 
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+        Node.js
+        
+### Getting Started
 
-### Setup
+Get a local copy by cloning this repository 
 
-### Install
+        git clone git@github.com:enelesmai/react-calculator.git
+
+Go into the repository
+
+        cd react-calculator
+
+Install dependencies vía NPM 
+
+        npm install
+
+Start the application
+
+        npm start
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
+** Explanation for the calculator will be added here
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Xóchitl Selene Flores Pérez**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@enelesmai](https://github.com/enelesmai)
+- Twitter: [@enelesmai](https://twitter.com/enelesmai)
+- Linkedin: [xochitlselene](https://linkedin.com/xochitlselene)
 
 ## 🤝 Contributing
 
@@ -67,7 +66,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
+- Motivation
 
 ## 📝 License
 
