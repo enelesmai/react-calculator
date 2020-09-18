@@ -5,12 +5,12 @@ const operate = (numberOne, numberTwo, operation) => {
   const numTwo = Big(numberTwo);
 
   switch (operation) {
-    case '/':
+    case '÷':
       if (numTwo === 0) {
         return 'undefined';
       }
       return numOne.div(numTwo).toString();
-    case 'X':
+    case 'x':
       return numOne.times(numTwo).toString();
     case '-':
       return numOne.minus(numTwo).toString();
