@@ -7,9 +7,6 @@ const calculate = (calculatorData, buttonName) => {
     case '+/-':
       total = (total).times(-1).toString();
       break;
-    case '%':
-      total = (total).div(100).toString();
-      break;
     case 'AC':
       total = 0;
       next = 0;
