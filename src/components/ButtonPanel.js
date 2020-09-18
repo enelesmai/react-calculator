@@ -1,54 +1,66 @@
 import React from 'react';
 import Button from './Button';
+import PropTypes from 'prop-types';
 
-/* eslint class-methods-use-this: ["error", { "exceptMethods": ["renderButton"] }] */
-class ButtonPanel extends React.Component {
-  renderButton(value) {
-    const operators = ['/', 'X', '-', '+', '='];
-    return (
-      <Button
-        value={value}
-        wide={value === '0'}
-        color={!operators.includes(value) ? 'gray' : undefined}
-      />
-    );
-  }
+const ButtonPanel = props => {
 
-  render() {
-    return (
-      <div className="ButtonPanel">
-        <div className="calc-row">
-          {this.renderButton('AC')}
-          {this.renderButton('+/-')}
-          {this.renderButton('%')}
-          {this.renderButton('÷')}
-        </div>
-        <div className="calc-row">
-          {this.renderButton('7')}
-          {this.renderButton('8')}
-          {this.renderButton('9')}
-          {this.renderButton('x')}
-        </div>
-        <div className="calc-row">
-          {this.renderButton('4')}
-          {this.renderButton('5')}
-          {this.renderButton('6')}
-          {this.renderButton('-')}
-        </div>
-        <div className="calc-row">
-          {this.renderButton('1')}
-          {this.renderButton('2')}
-          {this.renderButton('3')}
-          {this.renderButton('+')}
-        </div>
-        <div className="calc-row">
-          {this.renderButton('0')}
-          {this.renderButton('.')}
-          {this.renderButton('=')}
-        </div>
+  const handleClick = buttonName => {
+    props.clickHandler(buttonName);
+  };
+
+  return (
+    <div className="ButtonPanel">
+      <div className="calc-row">
+        {renderButton('AC',handleClick)}
+        {renderButton('+/-',handleClick)}
+        {renderButton('%',handleClick)}
+        {renderButton('÷',handleClick)}
       </div>
-    );
-  }
+      <div className="calc-row">
+        {renderButton('7',handleClick)}
+        {renderButton('8',handleClick)}
+        {renderButton('9',handleClick)}
+        {renderButton('x',handleClick)}
+      </div>
+      <div className="calc-row">
+        {renderButton('4',handleClick)}
+        {renderButton('5',handleClick)}
+        {renderButton('6',handleClick)}
+        {renderButton('-',handleClick)}
+      </div>
+      <div className="calc-row">
+        {renderButton('1',handleClick)}
+        {renderButton('2',handleClick)}
+        {renderButton('3',handleClick)}
+        {renderButton('+',handleClick)}
+      </div>
+      <div className="calc-row">
+        {renderButton('0',handleClick)}
+        {renderButton('.',handleClick)}
+        {renderButton('=',handleClick)}
+      </div>
+    </div>
+  );
+  
+};
+
+function renderButton(value,handleClick) {
+  const operators = ['/', 'X', '-', '+', '='];
+  return (
+    <Button
+      value={value}
+      wide={value === '0'}
+      color={!operators.includes(value) ? 'gray' : undefined}
+      clickHandler={handleClick}
+    />
+  );
 }
+
+ButtonPanel.defaultProps = {
+  clickHandler: null,
+};
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func,
+};
 
 export default ButtonPanel;
