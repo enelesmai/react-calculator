@@ -14,16 +14,22 @@ class App extends React.Component {
       operation: null,
     };
   }
-}
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Calculator</h1>
-      <Display />
-      <ButtonPanel />
-    </div>
-  );
+  handleClick(buttonName) {
+    const result = calculate(this.state, buttonName);
+    this.setState(result);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Calculator</h1>
+        <Display />
+        <ButtonPanel />
+      </div>
+    );
+  }
+
 }
 
 export default App;
