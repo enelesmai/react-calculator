@@ -5,6 +5,17 @@ import ButtonPanel from './ButtonPanel';
 // eslint-disable-next-line
 import calculate from '../logic/calculate';
 
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+  }
+}
+
 function App() {
   return (
     <div className="App">
