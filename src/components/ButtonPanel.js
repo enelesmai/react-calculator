@@ -21,13 +21,13 @@ class ButtonPanel extends React.Component {
           {this.renderButton('AC')}
           {this.renderButton('+/-')}
           {this.renderButton('%')}
-          {this.renderButton('/')}
+          {this.renderButton('÷')}
         </div>
         <div className="calc-row">
           {this.renderButton('7')}
           {this.renderButton('8')}
           {this.renderButton('9')}
-          {this.renderButton('X')}
+          {this.renderButton('x')}
         </div>
         <div className="calc-row">
           {this.renderButton('4')}
