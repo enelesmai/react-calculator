@@ -1,8 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button(props) {
+const Button = props => {
   const { value, wide, color } = props;
+  
+  const handleClick = e => {
+    props.clickHandler(e.target.id);
+  };
+
   let buttonStyle = '';
   if (wide) {
     buttonStyle += 'wide Button';
@@ -12,8 +17,10 @@ function Button(props) {
   buttonStyle += ` ${color}`;
   return (
     <button
+      id={value}
       type="button"
       className={buttonStyle}
+      onClick = {handleClick}
     >
       {value}
     </button>
