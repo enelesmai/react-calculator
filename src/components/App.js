@@ -13,6 +13,8 @@ class App extends React.Component {
       next: null,
       operation: null,
     };
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
@@ -21,11 +23,14 @@ class App extends React.Component {
   }
 
   render() {
+    const { total, next, operation } = this.state;
+    let currentResult = '';
+    currentResult = total;
     return (
       <div className="App">
         <h1>Calculator</h1>
-        <Display />
-        <ButtonPanel />
+        <Display result = {currentResult} />
+        <ButtonPanel clickHandler = {this.handleClick} />
       </div>
     );
   }
