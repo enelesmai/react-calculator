@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Button = props => {
-  const { value, wide, color, clickHandler, } = props;
+  const {
+    value, wide, color, clickHandler,
+  } = props;
 
   const handleClick = value => { clickHandler(value); };
-  
+
   let buttonStyle = '';
   if (wide) {
     buttonStyle += 'wide Button';
@@ -13,7 +15,7 @@ const Button = props => {
     buttonStyle += 'Button';
   }
   buttonStyle += ` ${color}`;
-  
+
   return (
     <button
       type="button"
@@ -23,7 +25,7 @@ const Button = props => {
       {value}
     </button>
   );
-}
+};
 
 Button.defaultProps = {
   value: '',
