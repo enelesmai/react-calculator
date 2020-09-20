@@ -40,7 +40,7 @@ Start the application
         npm start
 
 ### Usage
-** Explanation for the calculator will be added here
+* You can use the calculator by clicking on the buttons or touch screen device as a standard calculator.
 
 
 ## Authors
