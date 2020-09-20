@@ -45,7 +45,7 @@ const ButtonPanel = props => {
 };
 
 function renderButton(value,handleClick) {
-  const operators = ['/', 'X', '-', '+', '='];
+  const operators = ['÷', 'x', '-', '+', '='];
   return (
     <Button
       value={value}

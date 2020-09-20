@@ -5,7 +5,7 @@ function Display(props) {
   const { result } = props;
   return (
     <div>
-      <input className="Display" type="text" value={result} />
+      <input className="Display" type="text" value={result} readOnly />
     </div>
   );
 }

@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: null,
+      total: '0',
       next: null,
       operation: null,
     };
@@ -18,6 +18,9 @@ class App extends React.Component {
   }
 
   handleClick(buttonName) {
+    console.log('click event');
+    console.log(buttonName);
+    console.log(this.state);
     const result = calculate(this.state, buttonName);
     this.setState(result);
   }
